@@ -11,27 +11,65 @@ class Blog extends Component {
 
     state = {
         posts: [],
+        selectedPostId: null,
+        error: false,
     };
     
     componentDidMount() {
-        axios.get('http://jsonplaceholder.typicode.com/posts').then(posts => {
-            this.setState({
-                ...this.state,
-                posts: posts.data
+        axios
+          .get('posts/')
+          .then(posts => {
+            const newPosts = posts.data.slice(0, 4);
+            const updatedPosts = newPosts.map((post) => {
+                return {
+                    ...post,
+                    author: 'Harshit',
+                };
             });
 
-            console.log('The data is: ', this.state.posts);
+            this.setState({
+              ...this.state,
+              posts: updatedPosts,
+            });
+
+          })
+          .catch(() => {
+              this.setState({
+                  error: true
+              });
+          });
+    }
+
+    postClickedHandler = (id) => {
+        console.log('Clicked on the post with id: ', id);
+        this.setState({
+            ...this.state,
+            selectedPostId: id,
         });
     }
     
     render () {
+        let posts = <p style={{ textAlign: 'center' }}> Something went wrong! </p>;
+
+        if(!this.state.error) {
+            posts = this.state.posts
+                .map(post => 
+                    <Post 
+                        key={post.id} 
+                        {...post} 
+                        clicked={() => this.postClickedHandler(post.id)}
+                    />
+                )
+        }
         return (
             <div>
                 <section className="Posts">
-                    {this.state.posts.map(post => <Post {...post}/>)}
+                    {posts}
                 </section>
                 <section>
-                    <FullPost />
+                    <FullPost 
+                        id={this.state.selectedPostId}
+                    />
                 </section>
                 <section>
                     <NewPost />
