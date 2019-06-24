@@ -11,7 +11,6 @@ class FullPost extends Component {
     };
     
     componentDidUpdate() {
-        console.log('inside update and id is present', this.props);
         if(this.props.id) {
             if(!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id !== this.props.id)) {
                 axios
@@ -21,11 +20,7 @@ class FullPost extends Component {
                             loadedPost: res.data,
                             deleted: false,
                         });
-                    })
-                    .catch(() => {
-                        console.log('data not fetched');
                     });
-             
             }           
         }
     }
@@ -34,13 +29,9 @@ class FullPost extends Component {
         axios
             .delete('posts/'+this.props.id)
             .then((res) => {
-                console.log('delete request sucess', res);
                 this.setState({
                     deleted: true
                 })
-            })
-            .catch((err) => {
-                console.log('error has occured while deleting', err);
             });
     }
     
@@ -50,7 +41,6 @@ class FullPost extends Component {
             post = <p style={{ textAlign: 'center' }}>Loading Data...</p>;
         }
         if(this.state.loadedPost && !this.state.deleted) {
-            console.log('when the post.id is true');
             post = (
                 <div className="FullPost">
                     <h1>{this.state.loadedPost.title}</h1>

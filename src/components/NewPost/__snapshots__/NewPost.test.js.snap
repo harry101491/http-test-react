@@ -1,0 +1,418 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewPost /> render as expected 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NewPost />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Add a Post
+</h1>,
+        <label>
+          Title
+</label>,
+        <input
+          onChange={[Function]}
+          type="text"
+          value=""
+/>,
+        <label>
+          Content
+</label>,
+        <textarea
+          onChange={[Function]}
+          rows="4"
+          value=""
+/>,
+        <label>
+          Author
+</label>,
+        <select
+          onChange={[Function]}
+          value="Max"
+>
+          <option
+                    value="Max"
+          >
+                    Max
+          </option>
+          <option
+                    value="Manu"
+          >
+                    Manu
+          </option>
+</select>,
+        <button
+          onClick={[Function]}
+>
+          Add Post
+</button>,
+      ],
+      "className": "NewPost",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add a Post",
+        },
+        "ref": null,
+        "rendered": "Add a Post",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Title",
+        },
+        "ref": null,
+        "rendered": "Title",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "onChange": [Function],
+          "type": "text",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Content",
+        },
+        "ref": null,
+        "rendered": "Content",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "onChange": [Function],
+          "rows": "4",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "textarea",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Author",
+        },
+        "ref": null,
+        "rendered": "Author",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value="Max"
+>
+              Max
+</option>,
+            <option
+              value="Manu"
+>
+              Manu
+</option>,
+          ],
+          "onChange": [Function],
+          "value": "Max",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Max",
+              "value": "Max",
+            },
+            "ref": null,
+            "rendered": "Max",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Manu",
+              "value": "Manu",
+            },
+            "ref": null,
+            "rendered": "Manu",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Post",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Add Post",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Add a Post
+</h1>,
+          <label>
+            Title
+</label>,
+          <input
+            onChange={[Function]}
+            type="text"
+            value=""
+/>,
+          <label>
+            Content
+</label>,
+          <textarea
+            onChange={[Function]}
+            rows="4"
+            value=""
+/>,
+          <label>
+            Author
+</label>,
+          <select
+            onChange={[Function]}
+            value="Max"
+>
+            <option
+                        value="Max"
+            >
+                        Max
+            </option>
+            <option
+                        value="Manu"
+            >
+                        Manu
+            </option>
+</select>,
+          <button
+            onClick={[Function]}
+>
+            Add Post
+</button>,
+        ],
+        "className": "NewPost",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add a Post",
+          },
+          "ref": null,
+          "rendered": "Add a Post",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Title",
+          },
+          "ref": null,
+          "rendered": "Title",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "onChange": [Function],
+            "type": "text",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Content",
+          },
+          "ref": null,
+          "rendered": "Content",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "onChange": [Function],
+            "rows": "4",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "textarea",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Author",
+          },
+          "ref": null,
+          "rendered": "Author",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value="Max"
+>
+                Max
+</option>,
+              <option
+                value="Manu"
+>
+                Manu
+</option>,
+            ],
+            "onChange": [Function],
+            "value": "Max",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Max",
+                "value": "Max",
+              },
+              "ref": null,
+              "rendered": "Max",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Manu",
+                "value": "Manu",
+              },
+              "ref": null,
+              "rendered": "Manu",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Post",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Add Post",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": false,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

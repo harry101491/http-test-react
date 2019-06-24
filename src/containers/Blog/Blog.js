@@ -41,7 +41,6 @@ class Blog extends Component {
     }
 
     postClickedHandler = (id) => {
-        console.log('Clicked on the post with id: ', id);
         this.setState({
             ...this.state,
             selectedPostId: id,
