@@ -4,8 +4,8 @@ import App from './App';
 
 describe('App', () => {
   it('component with App className', () => {
-    // const wrapper = shallow(<App />);
-    expect(true).toBe(true);
+    const wrapper = shallow(<App />);
+    expect(wrapper.find('.App')).toBeDefined();
   });
 });
 
