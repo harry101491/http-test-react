@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import './FullPost.css';
+import './FullPost.scss';
 
 class FullPost extends Component {
 

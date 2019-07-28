@@ -1,0 +1,19 @@
+.Header {
+    color: #ccc;
+}
+
+.Header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Header li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.Header a {
+    text-decoration: none;
+    color: black;
+}
