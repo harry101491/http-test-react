@@ -3,6 +3,8 @@ import API from '../../../api';
 
 import Post from '../../../components/Post/Post';
 
+import './Posts.scss';
+
 class Posts extends Component {
 
     state = {

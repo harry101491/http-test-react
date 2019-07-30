@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -10,10 +11,18 @@ class Header extends Component {
                 <nav>
                     <ul>
                         <li>
-                            <a href="/"> Home </a>
+                            <Link
+                                to='/'
+                            >Home</Link>
                         </li>
                         <li>
-                            <a href="/new_post"> New Post </a>
+                            <Link
+                                to={{
+                                    pathname: '/new_post',
+                                    hash: '#submit',
+                                    search: '?query_param=true'
+                                }}
+                            >New Post</Link>
                         </li>
                     </ul>
                 </nav>
