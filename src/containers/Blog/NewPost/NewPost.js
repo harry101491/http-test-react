@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import API from '../../api';
 
 import './NewPost.scss';
 
@@ -17,7 +17,7 @@ class NewPost extends Component {
             author: this.state.author,
         };
 
-        axios
+        API
             .post('posts/', data)
             .then(res => {
                 console.log('the succesfull response', res);

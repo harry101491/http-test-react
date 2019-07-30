@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1562639343826" clover="3.2.0">
-  <project timestamp="1562639343827" name="All files">
-    <metrics statements="67" coveredstatements="21" conditionals="42" coveredconditionals="6" methods="40" coveredmethods="7" elements="149" coveredelements="34" complexity="0" loc="67" ncloc="67" packages="5" files="9" classes="9">
+<coverage generated="1564297150902" clover="3.2.0">
+  <project timestamp="1564297150902" name="All files">
+    <metrics statements="71" coveredstatements="23" conditionals="42" coveredconditionals="6" methods="43" coveredmethods="8" elements="156" coveredelements="37" complexity="0" loc="71" ncloc="71" packages="6" files="11" classes="11">
       <package name="src">
-        <metrics statements="31" coveredstatements="4" conditionals="25" coveredconditionals="0" methods="19" coveredmethods="1"/>
+        <metrics statements="34" coveredstatements="6" conditionals="25" coveredconditionals="0" methods="21" coveredmethods="2"/>
         <file name="App.js" path="/Users/harshitpareek/Documents/react-app/http-test-react/src/App.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="7" count="1" type="stmt"/>
+        </file>
+        <file name="api.js" path="/Users/harshitpareek/Documents/react-app/http-test-react/src/api.js">
+          <metrics statements="3" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
         </file>
         <file name="index.js" path="/Users/harshitpareek/Documents/react-app/http-test-react/src/index.js">
           <metrics statements="11" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -69,6 +75,13 @@
           <line num="57" count="2" type="stmt"/>
         </file>
       </package>
+      <package name="src.components.Header">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <file name="Header.js" path="/Users/harshitpareek/Documents/react-app/http-test-react/src/components/Header/Header.js">
+          <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="8" count="0" type="stmt"/>
+        </file>
+      </package>
       <package name="src.components.NewPost">
         <metrics statements="8" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
         <file name="NewPost.js" path="/Users/harshitpareek/Documents/react-app/http-test-react/src/components/NewPost/NewPost.js">
@@ -96,19 +109,19 @@
         <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="3"/>
         <file name="Blog.js" path="/Users/harshitpareek/Documents/react-app/http-test-react/src/containers/Blog/Blog.js">
           <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="3"/>
-          <line num="19" count="1" type="stmt"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
-          <line num="30" count="1" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
-          <line num="44" count="0" type="stmt"/>
-          <line num="51" count="2" type="stmt"/>
-          <line num="53" count="2" type="cond" truecount="1" falsecount="1"/>
-          <line num="54" count="2" type="stmt"/>
-          <line num="56" count="0" type="stmt"/>
-          <line num="59" count="0" type="stmt"/>
-          <line num="63" count="2" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="32" count="1" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="53" count="2" type="stmt"/>
+          <line num="55" count="2" type="cond" truecount="1" falsecount="1"/>
+          <line num="56" count="2" type="stmt"/>
+          <line num="58" count="0" type="stmt"/>
+          <line num="61" count="0" type="stmt"/>
+          <line num="65" count="2" type="stmt"/>
         </file>
       </package>
     </metrics>

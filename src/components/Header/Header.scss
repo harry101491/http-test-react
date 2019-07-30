@@ -6,6 +6,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100;
+    text-align: center;
 }
 
 .Header li {
@@ -16,4 +18,9 @@
 .Header a {
     text-decoration: none;
     color: black;
+}
+
+.Header a:hover,
+.Header a:active {
+    color: #fa923f;
 }

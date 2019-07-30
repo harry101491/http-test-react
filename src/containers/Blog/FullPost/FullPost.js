@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import API from '../../../api';
 
 import './FullPost.scss';
 
@@ -13,7 +13,7 @@ class FullPost extends Component {
     componentDidUpdate() {
         if(this.props.id) {
             if(!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id !== this.props.id)) {
-                axios
+                API
                     .get('posts/'+this.props.id)
                     .then((res) => {
                         this.setState({
@@ -26,7 +26,7 @@ class FullPost extends Component {
     }
 
     deletePostHandler = () => {
-        axios
+        API
             .delete('posts/'+this.props.id)
             .then((res) => {
                 this.setState({
