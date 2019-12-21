@@ -52,8 +52,8 @@ class Posts extends Component {
             posts = this.state.posts
                 .map(post => 
                     <Post 
-                        key={post.id} 
-                        {...post} 
+                        key={post.id}
+                        {...post}
                         clicked={() => this.postClickedHandler(post.id)}
                     />
                 )

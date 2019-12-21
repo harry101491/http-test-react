@@ -10,8 +10,13 @@ import './Blog.scss';
 
 
 class Blog extends Component {
+
+    componentDidMount() {
+        console.log('params in Blog post', this.props);
+    }
     
     render () {
+        console.log('Inside the Blog', this.props);
         return (
             <div>
                 <Header />

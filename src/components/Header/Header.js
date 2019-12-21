@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -11,18 +11,18 @@ class Header extends Component {
                 <nav>
                     <ul>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/'
-                            >Home</Link>
+                            >Home</NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to={{
                                     pathname: '/new_post',
                                     hash: '#submit',
                                     search: '?query_param=true'
                                 }}
-                            >New Post</Link>
+                            >New Post</NavLink>
                         </li>
                     </ul>
                 </nav>
