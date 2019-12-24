@@ -13,6 +13,7 @@ class Header extends Component {
                         <li>
                             <NavLink
                                 to='/'
+                                activeClassName="my-home"
                             >Home</NavLink>
                         </li>
                         <li>

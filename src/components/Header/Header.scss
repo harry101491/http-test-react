@@ -21,6 +21,11 @@
 }
 
 .Header a:hover,
-.Header a:active {
+.Header a:active,
+.Header a.active {
     color: #fa923f;
+}
+
+.Header .my-home {
+    color: #aa923a;
 }

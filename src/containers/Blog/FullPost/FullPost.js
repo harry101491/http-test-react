@@ -9,13 +9,15 @@ class FullPost extends Component {
         loadedPost: null,
         deleted: false,
     };
-    
-    componentDidUpdate() {
-        if(this.props.id) {
-            if(!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id !== this.props.id)) {
+
+    componentDidMount() {
+        console.log('The value of full post props is: ', this.props);
+        if(this.props.match.params.id) {
+            if(!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id !== this.props.match.params.id)) {
                 API
-                    .get('posts/'+this.props.id)
+                    .get('posts/'+this.props.match.params.id)
                     .then((res) => {
+                        console.log('after getting the data', res);
                         this.setState({
                             loadedPost: res.data,
                             deleted: false,
@@ -24,7 +26,7 @@ class FullPost extends Component {
             }           
         }
     }
-
+    
     deletePostHandler = () => {
         API
             .delete('posts/'+this.props.id)

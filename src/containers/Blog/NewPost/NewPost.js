@@ -11,7 +11,10 @@ class NewPost extends Component {
     }
 
     componentDidMount() {
-        console.log('params in New post', this.props);
+        console.log('params in New post', this.props.location.search);
+        // getting the hash value and serach params
+        const query = new URLSearchParams(this.props.location.search);
+        console.log('the value query_param' + query.get('query_param'));
     }
 
     postDataHandler = () => {

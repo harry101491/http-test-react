@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../../api';
+import { Link } from 'react-router-dom';
 
 import Post from '../../../components/Post/Post';
 
@@ -51,11 +52,12 @@ class Posts extends Component {
         if(!this.state.error) {
             posts = this.state.posts
                 .map(post => 
-                    <Post 
-                        key={post.id}
-                        {...post}
-                        clicked={() => this.postClickedHandler(post.id)}
-                    />
+                    <Link to={'/' + post.id} key={post.id}>
+                        <Post 
+                            {...post}
+                            clicked={() => this.postClickedHandler(post.id)}
+                        />
+                    </Link>
                 )
         }
 
